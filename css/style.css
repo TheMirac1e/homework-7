@@ -1,0 +1,27 @@
+.header {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__burger-button {
+  height: 40px;
+  width: 40px;
+  background-color: red;
+  z-index: 40;
+}
+
+.header__menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #f3b400;
+  transform: translateX(100%);
+  transition: .8s linear all;
+}
+
+.header__menu.is-active {
+  transform: translateX(0%);
+}
